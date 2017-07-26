@@ -3,3 +3,77 @@ body {
 	margin: 0;
 	font-family: 'Inconsolata', Courier, monospace;
 }
+
+/* BS Edit */
+.navbar-default {
+	border: none;
+	background-color: $rojo;
+	border-radius: 0;
+
+	.navbar-nav {
+
+		li {
+			margin-right: 15px;
+			
+			a {
+				color: $blanco;
+				text-transform: uppercase;
+
+				&:hover,
+				&:focus,
+				&:active,
+				&:hover:focus  {
+					color: $blanco;
+				}
+			}
+
+			&.active a,
+			a:hover,
+			a:focus,
+			a:active,
+			a:hover:focus {
+				color: $blanco;
+				background-color: $azul;
+				padding-top: 5px;
+			    padding-bottom: 5px;
+			    margin-top: 10px;
+			    margin-bottom: 15px;
+			    border-radius: 15px;
+			}
+
+			&.active {
+			    a:hover,
+				a:focus,
+				a:active,
+				a:hover:focus {
+					color: $blanco;
+					background-color: $azul;
+					padding-top: 5px;
+				    padding-bottom: 5px;
+				    margin-top: 10px;
+				    margin-bottom: 15px;
+				    border-radius: 15px;
+				}
+			}
+		}
+	}
+	.navbar-brand {
+		color: $blanco;
+		font-weight: 700;
+		display: flex;
+	    justify-content: flex-start;
+	    align-items: center;
+	    margin-top: 2px;
+
+		&__icon {
+	    display: block;
+	    width: 45px;
+    	height: 45px;
+	    overflow: hidden;
+	    border: 5px solid #ddd;
+	    background-color: $azul;
+	    border-radius: 50%;
+	    margin-right: 10px;
+		}
+	}
+}
