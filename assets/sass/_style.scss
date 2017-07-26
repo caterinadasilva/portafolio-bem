@@ -21,6 +21,41 @@
 		    margin-top: 50px;
 		}
 	}
+
+	.social {
+		text-align: center;
+		margin-top: 60px;
+
+		@mixin social-icon($social) {
+		  height: 50px;
+		  width: 50px;
+		  background-image: url($social);
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  display: inline-block;
+		  background-color: #fff;
+		}
+		&__link {
+			&--facebook {
+				@include social-icon("../img/facebook.png");
+			}
+			&--twitter {
+				@include social-icon("../img/twitter.png");
+			}
+			&--googleplus {
+				@include social-icon("../img/google-plus.png");
+			}
+			&--pinterest {
+				@include social-icon("../img/pinterest.png");
+			}
+			&--behance {
+				@include social-icon("../img/behance.png");
+			}
+			&--dribbble {
+				@include social-icon("../img/dribbble.png");
+			}
+		}
+	}
 }
 
 .skills {

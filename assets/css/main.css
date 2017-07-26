@@ -18,6 +18,57 @@
       width: 100%;
       display: block;
       margin-top: 50px; }
+  .header .social {
+    text-align: center;
+    margin-top: 60px; }
+    .header .social__link--facebook {
+      height: 50px;
+      width: 50px;
+      background-image: url("../img/facebook.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-color: #fff; }
+    .header .social__link--twitter {
+      height: 50px;
+      width: 50px;
+      background-image: url("../img/twitter.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-color: #fff; }
+    .header .social__link--googleplus {
+      height: 50px;
+      width: 50px;
+      background-image: url("../img/google-plus.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-color: #fff; }
+    .header .social__link--pinterest {
+      height: 50px;
+      width: 50px;
+      background-image: url("../img/pinterest.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-color: #fff; }
+    .header .social__link--behance {
+      height: 50px;
+      width: 50px;
+      background-image: url("../img/behance.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-color: #fff; }
+    .header .social__link--dribbble {
+      height: 50px;
+      width: 50px;
+      background-image: url("../img/dribbble.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-color: #fff; }
 
 .skills {
   height: 100vh;
