@@ -3,6 +3,44 @@ body {
 	margin: 0;
 	font-family: 'Inconsolata', Courier, monospace;
 }
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 6rem;
+}
+h2 {
+	font-size: 4rem;
+}
+h3 {
+	font-size: 3.5rem;
+}
+h4 {
+	font-size: 2.7rem;
+}
+
+.btn {
+	&.btn-lg {
+		border-radius: 32px;
+	    padding: 16px 48px;
+	    text-transform: uppercase;
+	}
+}
+.btn-success {
+    color: #fff;
+    background-color: $verde;
+    border-color: $verde-hover;
+
+    &:hover,
+	&:focus,
+	&:active,
+	&:hover:focus  {
+		color: #fff;
+	    background-color: $verde-hover;
+	    border-color: $verde-hover;
+	}
+}
 
 /* BS Edit */
 .navbar-default {
@@ -14,7 +52,7 @@ body {
 
 		li {
 			margin-right: 15px;
-			
+
 			a {
 				color: $blanco;
 				text-transform: uppercase;
@@ -33,12 +71,13 @@ body {
 			a:active,
 			a:hover:focus {
 				color: $blanco;
-				background-color: $azul;
+				background-color: $acento;
 				padding-top: 5px;
 			    padding-bottom: 5px;
 			    margin-top: 10px;
 			    margin-bottom: 15px;
 			    border-radius: 15px;
+			    color: $hover;
 			}
 
 			&.active {
@@ -47,12 +86,13 @@ body {
 				a:active,
 				a:hover:focus {
 					color: $blanco;
-					background-color: $azul;
+					background-color: $acento;
 					padding-top: 5px;
 				    padding-bottom: 5px;
 				    margin-top: 10px;
 				    margin-bottom: 15px;
 				    border-radius: 15px;
+				    color: $hover;
 				}
 			}
 		}
@@ -70,10 +110,17 @@ body {
 	    width: 45px;
     	height: 45px;
 	    overflow: hidden;
-	    border: 5px solid #ddd;
-	    background-color: $azul;
+	    border: 5px solid $gris;
+	    background-color: $blanco;
 	    border-radius: 50%;
 	    margin-right: 10px;
+		}
+
+		&:hover,
+		&:focus,
+		&:active,
+		&:hover:focus  {
+			color: $acento;
 		}
 	}
 }
