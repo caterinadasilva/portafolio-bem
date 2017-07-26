@@ -19,6 +19,13 @@
       display: block;
       margin-top: 50px; }
 
+.skills {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd; }
+
 body {
   padding: 0;
   margin: 0;
